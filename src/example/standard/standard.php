@@ -29,3 +29,27 @@ $iririu->setStorage($storage);
 $util->log('Creating dealeaship from América');
 $america = new DealershipStandard();
 $america->setStorage($storage);
+
+// Showing storage.
+$util->log("Costa e Silva's storage");
+print_r($costaSilva->getStorage());
+
+$util->log("Iririú's storage");
+print_r($iririu->getStorage());
+
+$util->log("Américas's storage");
+print_r($america->getStorage());
+
+// Changing color.
+$util->log("Changing color from Civic at Iririú's storage");
+$iririu->setCarColor(0, 'Vermelho');
+
+// Showing storage again.
+$util->log("Costa e Silva's storage");
+print_r($costaSilva->getStorage());
+
+$util->log("Iririú's storage");
+print_r($iririu->getStorage());
+
+$util->log("Américas's storage");
+print_r($america->getStorage());

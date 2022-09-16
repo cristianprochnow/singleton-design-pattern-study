@@ -13,4 +13,11 @@ class DealershipStandard
   {
     $this->storage = $cars;
   }
+
+  public function setCarColor(int $index, string $color)
+  {
+    $car = $this->storage[$index];
+    $car->cor = $color;
+    $this->storage[$index] = $car;
+  }
 }
