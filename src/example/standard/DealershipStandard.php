@@ -4,6 +4,8 @@ class DealershipStandard
 {
   private array $storage = [];
 
+  public function __construct() {}
+
   public function getStorage(): array
   {
     return $this->storage;
